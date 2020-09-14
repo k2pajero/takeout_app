@@ -1,0 +1,25 @@
+.purchase-btn {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  text-align: center;
+  border-radius: 50%;
+  border: lightgray 5px solid;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.purchase-btn-text {
+  color: white;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.purchase-btn-icon {
+  width: 60%;
+  height: 60%;
+}
