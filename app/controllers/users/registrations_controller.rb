@@ -12,32 +12,29 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     @user = User.new(sign_up_params)
-    unless @user.valid?
-      render :new and return
-    end
-   session["devise.regist_data"] = {user: @user.attributes}
-  #  binding.pry
-   session["devise.regist_data"][:user]["password"] = params[:user][:password]
-  #  binding.pry
-   @address = @user.build_address
-   render :new_address
+    render :new and return unless @user.valid?
+
+    session['devise.regist_data'] = { user: @user.attributes }
+    #  binding.pry
+    session['devise.regist_data'][:user]['password'] = params[:user][:password]
+    #  binding.pry
+    @address = @user.build_address
+    render :new_address
   end
 
   def create_address
-    @user = User.new(session["devise.regist_data"]["user"])
+    @user = User.new(session['devise.regist_data']['user'])
     @address = Address.new(address_params)
     # binding.pry
-     unless @address.valid?
-       render :new_address
-     end
+    render :new_address unless @address.valid?
     @user.build_address(@address.attributes)
     @user.save
-    session["devise.regist_data"]["user"].clear
+    session['devise.regist_data']['user'].clear
     sign_in(:user, @user)
   end
- 
+
   protected
- 
+
   def address_params
     params.require(:address).permit(:postal_code, :prefecture_id, :city, :address, :building_name, :tell)
   end
