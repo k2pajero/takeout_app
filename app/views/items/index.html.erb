@@ -26,7 +26,7 @@
     <%= link_to '新着商品', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
-    <%# @items.each do |item| %>
+    <%= @items.each do |item| %>
       <li class='list'>
         <%# link_to item_path(item.id) do %>
         <div class='item-img-content'>
@@ -35,16 +35,16 @@
           <%# if item.order != nil %>
           <%# <div class='sold-out'> 
            <span>Sold Out!!</span>
-          </div> %>
-          <%# end %>
+          </div>
+          <%= end %>
           
         </div>
         <div class='item-info'>
           <h3 class='item-name'>
-            <%# item.name %>
+            <%= item.name %>
           </h3>
           <div class='item-price'>
-            <span><%# item.price %>円<br>(税込み)</span>
+            <span><%= item.display_price %><br>(税込み)</span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>
@@ -53,7 +53,7 @@
         </div>
         <%# end %>
       </li>
-    <%# end %>
+    <% end %>
 
 
     </ul>
