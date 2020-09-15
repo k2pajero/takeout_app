@@ -46,6 +46,9 @@ group :development do
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'annotate'
+  gem 'active_decorator'
+
 end
 
 group :test do
@@ -61,8 +64,11 @@ gem 'active_hash'
 gem 'devise'
 gem 'pry-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'
 gem "aws-sdk-s3", require: false
 
 group :production do
   gem 'rails_12factor'
 end
+
