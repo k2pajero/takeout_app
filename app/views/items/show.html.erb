@@ -31,7 +31,7 @@
     <% end %>
 
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
-    <%= link_to 'カートに入れる', "#" ,class:"item-red-btn"%>
+    <%= link_to 'カートに入れる', item_add_to_baskets_path(@item) ,class:"item-red-btn", method: :post do %>
     <% end %>
   
 
