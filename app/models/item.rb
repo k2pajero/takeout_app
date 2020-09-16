@@ -1,14 +1,18 @@
-
 class Item < ApplicationRecord
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to_active_hash :saize_category
+  belongs_to_active_hash :genre_category
+  belongs_to_active_hash :speed
   has_one_attached :image
 
   with_options presence: true do
+    validates :image
     validates :name
     validates :description
-    validates :saize_category_id
-    validates :genre_category_id
+    validates :saize_category_id,numericality: { other_than: 0 }
+    validates :genre_category_id,numericality: { other_than: 0 }
+    validates :speed_id,         numericality: { other_than: 0 }
     validates :price
-    validates :unit
   end
 
   
