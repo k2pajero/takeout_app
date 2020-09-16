@@ -1,0 +1,2 @@
+class BasketItem < ApplicationRecord
+end
