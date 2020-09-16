@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   }
   root 'items#index'
   resources :users, only: :create
-  resources :items, only: [:index, :new, :create]
+  resources :items, only: [:index, :new, :create, :show]
   # resources :address
   devise_scope :user do
     get 'addresses', to: 'users/registrations#new_address'
