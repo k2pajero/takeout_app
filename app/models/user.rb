@@ -17,4 +17,5 @@ class User < ApplicationRecord
   end
 
   has_one :address
+  has_one :basket, dependent: :destroy
 end
