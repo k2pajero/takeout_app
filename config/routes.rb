@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
   root 'items#index'
+  resource :basket, only: [:show]
   resources :users, only: :create
   resources :items, only: [:index, :new, :create, :show] do
     scope module: :items do
