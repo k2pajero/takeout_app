@@ -6,24 +6,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Item.create!(
-  name: 'test',
-  description: 'aaaaaaa',
-  price: 100,
-  unit: 'yen', 
-  genre_category_id: 1,
-  saize_category_id: 1 
-)
+# Item.create!(
+#   name: 'test',
+#   description: 'aaaaaaa',
+#   price: 100,
+#   speed_id: 1, 
+#   genre_category_id: 1,
+#   saize_category_id: 1 
+# )
 
-20.times do
-  Item.create!(
-    name: Faker::Food.dish,
-    description: Faker::Lorem.paragraph(2),
-    price: Faker::Number.within(10..100000),
-    unit: %w(yen usd).sample,
-    genre_category_id: 1,
-    saize_category_id: 1
-  )
+# 20.times do
+#   Item.create!(
+#     name: Faker::Food.dish,
+#     description: Faker::Lorem.paragraph(2),
+#     price: Faker::Number.within(10..100000),
+#     speed_id: 1,
+#     genre_category_id: 1,
+#     saize_category_id: 1
+#   )
+# end
 
   User.create!(nickname:  "管理者",
     email: "admin@example.jp",
@@ -34,5 +35,5 @@ Item.create!(
     reading_family_name: "テンポ",
     reading_first_name: "センヨウ",
     birthday: "2020-09-14",
-    admin: true)
-end
+    admin: true
+  )
