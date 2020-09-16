@@ -12,9 +12,12 @@ RailsAdmin.config do |config|
     # redirect_to main_app.root_path unless current_user.is_admin?
   # end
   ## == CancanCan ==
-  config.authorize_with :cancan
-
+  # config.authorize_with :cancan
+  # コメントアウト外すと [NoMethodError in RailsAdmin::MainController#dashboard
+  # undefined method `new' for nil:NilClass]となる。
+  # configでの操作後はサーバ再起動しないと適応されない
   ## == Pundit ==
+
   # config.authorize_with :pundit
 
   ## == PaperTrail ==
