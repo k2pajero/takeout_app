@@ -33,7 +33,7 @@
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
       <div class='purchase-btn'>
         <span class='purchase-btn-text'>買い物かごを見る</span>
-        <a href="">
+        <a href="/basket">
         <%= image_tag 'digital-2214139_640.png' , size: '185x50' ,class: "purchase-btn-icon" %>
         </a>
       </div> 

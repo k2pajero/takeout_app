@@ -1,0 +1,33 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <div class='item-contents'>
+    <h2 class='title'>カートの商品一覧</h2>
+    <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
+    <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
+    <ul class='item-lists'>
+
+      <% @items.each do |item| %>
+      <div class='item-img-content'>
+        <%= image_tag item.image, class: "item-img" if item.image.attached? %></div>
+        <div class='item-info'>
+          <li class='list'>
+            <h3 class='item-name'>
+              <%= item.name %>
+            </h3>
+            <div class='item-price'>
+              <span><%= item.price %>円<br>(税込み)</span>
+              <div class='star-btn'>
+                <%= image_tag "star.png", class:"star-icon" %>
+                <span class='star-count'>0</span>
+              </div>
+            </div>
+          </li>
+        </div>
+      <% end %>
+      </ul>
+      <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
+      <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
+  </div>
+</div>
+<%= render "shared/footer" %>
