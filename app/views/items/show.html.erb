@@ -24,13 +24,13 @@
         (税込) 送料込み
       </span>
     </div>
-    <% if current_user.admin? %>
+    <% if user_signed_in? && current_user.admin? %>
       <%= link_to '商品の編集', "#", method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除',"#", method: :delete, class:'item-destroy' %>
     <% end %>
 
-    <% if user_signed_in? && !current_user.admin %>  
+    <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
     <%= link_to 'カートに入れる', "#" ,class:"item-red-btn"%>
     <% end %>
   
