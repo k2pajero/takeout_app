@@ -31,7 +31,15 @@
     <% end %>
 
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
-    <%= link_to 'カートに入れる', item_add_to_baskets_path(@item) ,class:"item-red-btn", method: :post do %>
+      <div class='purchase-btn'>
+        <span class='purchase-btn-text'>買い物かごを見る</span>
+        <a href="">
+        <%= image_tag 'digital-2214139_640.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+        </a>
+      </div> 
+      <%= link_to item_add_to_baskets_path(@item.id), method: :post do %>
+      <button type="button" class="btn btn-success">買い物かごに入れる</button>
+      <% end %>
     <% end %>
   
 
