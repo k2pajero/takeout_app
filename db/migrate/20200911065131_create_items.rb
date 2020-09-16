@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer    :price,             null: false
       t.integer    :genre_category_id, null: false
       t.integer    :saize_category_id, null: false
-      t.string     :unit,              null: false, default: 'yen'
+      t.integer    :speed_id,          null: false
       t.timestamps
     end
   end

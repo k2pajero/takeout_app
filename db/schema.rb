@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_100112) do
     t.integer "price", null: false
     t.integer "genre_category_id", null: false
     t.integer "saize_category_id", null: false
-    t.string "unit", default: "yen", null: false
+    t.integer "speed_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
