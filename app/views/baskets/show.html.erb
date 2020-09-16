@@ -2,9 +2,10 @@
 <div class='main'>
 
   <div class='item-contents'>
-    <h2 class='title'>カートの商品一覧</h2>
+    <h2 class='title'>カートの中身一覧</h2>
     <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
     <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
+    
     <ul class='item-lists'>
 
       <% @items.each do |item| %>
@@ -20,6 +21,7 @@
               <div class='star-btn'>
                 <%= image_tag "star.png", class:"star-icon" %>
                 <span class='star-count'>0</span>
+                <%= link_to '削除する', item_delete_in_baskets_path(item), class: "delete-btn", method: :post, data: {confirm: '削除してもいいですか？'} %>
               </div>
             </div>
           </li>
