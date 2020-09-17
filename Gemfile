@@ -31,12 +31,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'gimei'
   gem 'rspec-rails', '~> 4.0.0'
-  gem 'dotenv-rails'
-
 end
 
 group :development do
@@ -44,13 +43,12 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'active_decorator'
+  gem 'annotate'
   gem 'letter_opener'
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'annotate'
-  gem 'active_decorator'
-
 end
 
 group :test do
@@ -63,17 +61,16 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'active_hash'
-gem 'devise'
-gem 'pry-rails'
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'mini_magick'
-gem 'image_processing', '~> 1.2'
-gem "aws-sdk-s3", require: false
-gem 'rails_admin', '~> 2.0.0.beta'
+gem 'aws-sdk-s3', require: false
 gem 'cancancan'
+gem 'devise'
+gem 'image_processing', '~> 1.2'
+gem 'mini_magick'
+gem 'pry-rails'
+gem 'rails_admin', '~> 2.0.0.beta'
 gem 'stripe'
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :production do
   gem 'rails_12factor'
 end
-

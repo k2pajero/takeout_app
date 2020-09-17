@@ -1,6 +1,6 @@
 class BasketsController < ApplicationController
   before_action :authenticate_user!
-    # ログインしていないと current_user が取得できずにエラーになるのを防ぐ
+  # ログインしていないと current_user が取得できずにエラーになるのを防ぐ
   def show
     basket = current_user.prepare_basket
     # basket情報の取得

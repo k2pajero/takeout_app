@@ -8,6 +8,7 @@ class Basket < ApplicationRecord
   end
 
   private
+
   def total_jpy_price
     items.sum(:price)
   end
