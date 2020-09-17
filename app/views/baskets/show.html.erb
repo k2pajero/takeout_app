@@ -7,9 +7,19 @@
     </div>
     <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
     <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
-    
-    <ul class='item-lists'>
+    <%= form_tag charge_path do %>
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+              data-amount="<%= @total_price %>"
+              data-description="クレジット決済"
+              data-label="購入する"
+              data-locale="auto"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-currency="jpy">
+              data-key=ENV['STRIPE_API_KEY']
+      </script>
+    <% end %>
 
+    <ul class='item-lists'>
       <% @items.each do |item| %>
       <div class='item-img-content'>
         <%= image_tag item.image, class: "item-img" if item.image.attached? %></div>
