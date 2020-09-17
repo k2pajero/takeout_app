@@ -10,6 +10,9 @@
       <button type="button" class="btn btn-success">買い物に戻る</button>
     <% end %><br>
     <%= form_tag charge_path do %>
+    <% @items.each do |p| %>
+     <%= hidden_field_tag 'item_ids[]', p.id %>
+    <% end %>
       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
               data-amount="<%= @total_price %>"
               data-key="<%= ENV['STRIPE_API_KEY'] %>"
