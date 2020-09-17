@@ -9,6 +9,8 @@ class ChargesController < ApplicationController
     items = current_user.basket.items.where(id: item_ids)
     # 今買い物かごに入っている商品の中から対象の商品と同じIDの商品
     total = items.sum(:price)
+    basket_items = current_user.basket.basket_items.where(item_id: item_ids)
+    basket_items.each(&:destroy!)
     Stripe::Charge.create({
                             amount: total,
                             currency: 'jpy',
