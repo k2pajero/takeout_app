@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: %i[index show]
 
   def index
     @items = Item.all.order(created_at: 'DESC')
@@ -48,7 +48,6 @@ class ItemsController < ApplicationController
 
   private
 
-  
   def item_params
     params.require(:item).permit(:name, :description, :price, :genre_category_id, :saize_category_id, :speed_id, :image)
   end
