@@ -5,11 +5,55 @@ a {
 .main {
   background: #f8f8f8;
 }
+// スライドショー
+.simpleSlideShow {
+  display: block;
+  width: 980px;
+  height: 400px;
+  margin: 0 auto;
+  }
+//   .simpleSlideShowWrapper {
+//   margin : 0 auto;
+//   position : relative;
+//   width: 980px;
+//   height: 400px;
+//   }
+  
+//   .simpleSlideShowWrapper img {
+//   display : none;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   }
+  
+//   #slide-main {
+//   position: relative;
+//   width: 980px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   }
+  
+//   #slidecopy {
+//   display: block;
+//   width: 960px;
+//   background: #fff;
+//   opacity: 0.7;
+//   padding: 10px;
+//   position: absolute;
+//   bottom: 0px;
+//   left: 0px;
+//   }
+  
+// スライドショー
 
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   background-image: image-url('foodiesfeed.com_pizza-with-ricotta-cheese-close-up.jpg');
+  // background-image: image-url('foodiesfeed.com_chocolate-cake-in-a-restaurant.jpg');
+  // background-image: image-url('141059_s.jpg');
+  // background-image: image-url('foodiesfeed.com_my-bread-and-butter.jpg');
+  // background-image: image-url('154925_s.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
