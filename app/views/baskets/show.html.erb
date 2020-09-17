@@ -28,8 +28,30 @@
         </div>
       <% end %>
       </ul>
-      <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
-      <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
+     <div class="container">
+
+  <%# haml %>
+  <h3 class="center mb-30">
+    gg
+  </h3>
+  <ul class="collection with-header">
+    <% @items.each do |item| %>
+      <li class="collection-item">
+      <%= item.name %>
+        <p class="right">
+          <span>
+            <%= item.price %>
+          </span>
+          <%= link_to item_delete_in_baskets_path(item), method: :post, data: {confirm: 'gg'} do %>
+            <span class="basket__delete">×</span>
+          <% end %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<%# haml %>
+
   </div>
 </div>
 <%= render "shared/footer" %>

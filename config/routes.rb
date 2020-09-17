@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   root 'items#index'
   resource :basket, only: [:show]
   resources :users, only: :create
-  resources :items, only: [:index, :new, :create, :show] do
+  resources :items, only: [:index, :new, :create, :show, :edit, :update, :destroy] do
     scope module: :items do
       resources :add_to_baskets, only: [:create]
       resources :delete_in_baskets, only: [:create]

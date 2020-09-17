@@ -7,5 +7,6 @@ class Items::AddToBasketsController < Items::ApplicationController
     basket.basket_items.create!(item_id: item.id)
     # basket_itemの作成（リレーションを組んでからでないとできないメソッド。複数形に注意）
     # 商品を選択するだけでユーザの入力ミスはありえないのでcreate!としている
+    redirect_to basket_path
   end
 end
