@@ -1,8 +1,10 @@
 <%= render "shared/header" %>
 <div class='main'>
-
   <div class='item-contents'>
-    <h2 class='title'>カートの中身一覧</h2>
+    <h2 class='title'>カートの中身一覧</h2><br>
+    <div class="sum-price">
+      <span>合計金額 <%= @total_price%> 円</span>
+    </div>
     <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
     <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
     
