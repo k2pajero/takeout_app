@@ -35,6 +35,8 @@ group :development, :test do
   gem 'faker'
   gem 'gimei'
   gem 'rspec-rails', '~> 4.0.0'
+  gem 'dotenv-rails'
+
 end
 
 group :development do
@@ -69,6 +71,7 @@ gem 'image_processing', '~> 1.2'
 gem "aws-sdk-s3", require: false
 gem 'rails_admin', '~> 2.0.0.beta'
 gem 'cancancan'
+gem 'stripe'
 
 group :production do
   gem 'rails_12factor'
