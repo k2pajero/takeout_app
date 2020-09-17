@@ -1,0 +1,57 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <div class='item-contents'>
+    <h2 class='title'>カートの中身一覧</h2>
+    <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
+    <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
+    
+    <ul class='item-lists'>
+
+      <% @items.each do |item| %>
+      <div class='item-img-content'>
+        <%= image_tag item.image, class: "item-img" if item.image.attached? %></div>
+        <div class='item-info'>
+          <li class='list'>
+            <h3 class='item-name'>
+              <%= item.name %>
+            </h3>
+            <div class='item-price'>
+              <span><%= item.price %>円<br>(税込み)</span>
+              <div class='star-btn'>
+                <%= image_tag "star.png", class:"star-icon" %>
+                <span class='star-count'>0</span>
+                <%= link_to '削除する', item_delete_in_baskets_path(item), class: "delete-btn", method: :post, data: {confirm: '削除してもいいですか？'} %>
+              </div>
+            </div>
+          </li>
+        </div>
+      <% end %>
+      </ul>
+     <div class="container">
+
+  <%# haml %>
+  <h3 class="center mb-30">
+    gg
+  </h3>
+  <ul class="collection with-header">
+    <% @items.each do |item| %>
+      <li class="collection-item">
+      <%= item.name %>
+        <p class="right">
+          <span>
+            <%= item.price %>
+          </span>
+          <%= link_to item_delete_in_baskets_path(item), method: :post, data: {confirm: 'gg'} do %>
+            <span class="basket__delete">×</span>
+          <% end %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<%# haml %>
+
+  </div>
+</div>
+<%= render "shared/footer" %>

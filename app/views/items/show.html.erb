@@ -25,13 +25,21 @@
       </span>
     </div>
     <% if user_signed_in? && current_user.admin? %>
-      <%= link_to '商品の編集', "#", method: :get, class: "item-red-btn" %>
+      <%= link_to '商品の編集', edit_item_path, method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除',"#", method: :delete, class:'item-destroy' %>
     <% end %>
 
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
-    <%= link_to 'カートに入れる', "#" ,class:"item-red-btn"%>
+      <div class='purchase-btn'>
+        <span class='purchase-btn-text'>買い物かごを見る</span>
+        <a href="/basket">
+        <%= image_tag 'digital-2214139_640.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+        </a>
+      </div> 
+      <%= link_to item_add_to_baskets_path(@item.id), method: :post do %>
+      <button type="button" class="btn btn-success">買い物かごに入れる</button>
+      <% end %>
     <% end %>
   
 

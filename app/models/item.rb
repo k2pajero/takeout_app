@@ -4,6 +4,7 @@ class Item < ApplicationRecord
   belongs_to_active_hash :genre_category
   belongs_to_active_hash :speed
   has_one_attached :image
+  has_many :basket_items, dependent: :destroy 
 
   with_options presence: true do
     validates :image

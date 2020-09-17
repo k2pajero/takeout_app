@@ -17,4 +17,9 @@ class User < ApplicationRecord
   end
 
   has_one :address
+  has_one :basket, dependent: :destroy
+
+  def prepare_basket
+    basket || create_basket
+  end
 end
