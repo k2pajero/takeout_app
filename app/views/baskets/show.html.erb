@@ -1,15 +1,31 @@
 <%= render "shared/header" %>
 <div class='main'>
-
   <div class='item-contents'>
-    <h2 class='title'>カートの中身一覧</h2>
-    <%= link_to '買い物に戻る', root_path, class: "return-top-btn" %>
-    <%= link_to '購入手続きへ', "#", class: "buy-btn" %>
-    
-    <ul class='item-lists'>
+    <h2 class='title'>カートの中身一覧</h2><br>
+    <div class="sum-price">
+      <span>合計金額 <%= @total_price%> 円</span>
+    </div><br>
+    <%# link_to '買い物に戻る', root_path, class: "return-top-btn" %>
+    <%= link_to root_path do %>
+      <button type="button" class="btn btn-success">買い物に戻る</button>
+    <% end %><br>
+    <%= form_tag charge_path do %>
+    <% @items.each do |p| %>
+     <%= hidden_field_tag 'item_ids[]', p.id %>
+    <% end %>
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" 
+              data-amount="<%= @total_price %>"
+              data-key="<%= ENV['STRIPE_API_KEY'] %>"
+              data-description="クレジット決済"
+              data-label="購入する"
+              data-locale="auto"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-currency="jpy"></script>
+    <% end %><br>
 
+    <ul class='item-lists'>
       <% @items.each do |item| %>
-      <div class='item-img-content'>
+       <div class='item-img-content'>
         <%= image_tag item.image, class: "item-img" if item.image.attached? %></div>
         <div class='item-info'>
           <li class='list'>
@@ -29,29 +45,6 @@
       <% end %>
       </ul>
      <div class="container">
-
-  <%# haml %>
-  <h3 class="center mb-30">
-    gg
-  </h3>
-  <ul class="collection with-header">
-    <% @items.each do |item| %>
-      <li class="collection-item">
-      <%= item.name %>
-        <p class="right">
-          <span>
-            <%= item.price %>
-          </span>
-          <%= link_to item_delete_in_baskets_path(item), method: :post, data: {confirm: 'gg'} do %>
-            <span class="basket__delete">×</span>
-          <% end %>
-        </p>
-      </li>
-    <% end %>
-  </ul>
-</div>
-<%# haml %>
-
   </div>
 </div>
 <%= render "shared/footer" %>

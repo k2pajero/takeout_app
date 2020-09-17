@@ -112,6 +112,10 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.9.0)
     factory_bot (6.1.0)
       activesupport (>= 5.0.0)
@@ -322,6 +326,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    stripe (5.25.0)
     temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
@@ -367,6 +372,7 @@ DEPENDENCIES
   cancancan
   capybara (>= 2.15)
   devise
+  dotenv-rails
   factory_bot_rails
   faker
   gimei
@@ -387,6 +393,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
+  stripe
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
