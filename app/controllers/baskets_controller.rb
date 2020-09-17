@@ -7,7 +7,7 @@ class BasketsController < ApplicationController
     # basket情報の取得
     # Userモデルにprepare_basketメソッドを定義して簡略化
     # basket = current_user.basket || current_user.create_basket
-    @items = basket.items
+    @items = basket.items.order(created_at: 'DESC')
     # binding.pry
     # basket からitems の一覧を取得し、ビューで表示できるようにする。
     # 一覧なので複数形のインスタンス変数になる
