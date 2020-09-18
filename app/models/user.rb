@@ -23,7 +23,7 @@ class User < ApplicationRecord
   def prepare_basket
     basket || create_basket
   end
-  
+
   def prepare_purchase_record
     purchase_record || create_purchase_record
   end
@@ -36,7 +36,7 @@ class User < ApplicationRecord
       basket_items = basket.basket_items.where(item_id: item_ids)
       basket_items.each(&:destroy!)
       # A：買い物かご中身を削除する処理
-      
+
       purchase_record = prepare_purchase_record
       ids = item_ids.map { |id| { item_id: id } }
       purchase_record.purchase_record_items.create!(ids)

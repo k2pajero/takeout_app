@@ -4,7 +4,7 @@ class ChargesController < ApplicationController
     token = params[:stripeToken]
     item_ids = params[:item_ids].map(&:to_i)
     # カート内の商品id達（paramsの中の配列文字列）を数値の配列で返す
-    
+
     # items = current_user.basket.items.where(id: item_ids)
     # 今買い物かごに入っている商品の中から対象の商品と同じIDの商品
     # total = items.sum(:price)
