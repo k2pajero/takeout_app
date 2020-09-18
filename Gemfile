@@ -68,7 +68,7 @@ gem 'mini_magick'
 gem 'pry-rails'
 gem 'rails_admin', '~> 2.0.0.beta'
 gem 'stripe'
-
+gem 'tzinfo-data'
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
 
 
