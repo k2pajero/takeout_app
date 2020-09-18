@@ -42,9 +42,6 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'active_decorator'
-  gem 'annotate'
-  gem 'letter_opener'
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -59,6 +56,9 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'active_decorator'
+gem 'annotate'
+gem 'letter_opener'
 gem 'active_hash'
 gem 'aws-sdk-s3', require: false
 gem 'cancancan'
@@ -70,7 +70,6 @@ gem 'rails_admin', '~> 2.0.0.beta'
 gem 'stripe'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
-
 
 group :production do
   gem 'rails_12factor'
