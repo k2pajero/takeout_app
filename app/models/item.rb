@@ -5,7 +5,7 @@ class Item < ApplicationRecord
   belongs_to_active_hash :speed
   has_one_attached :image
   has_many :basket_items, dependent: :destroy
-  has_many :purchase_product_items, dependent: :destroy
+  has_many :purchase_record_items, dependent: :destroy
 
   with_options presence: true do
     validates :image

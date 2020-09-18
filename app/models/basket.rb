@@ -4,7 +4,6 @@ class Basket < ApplicationRecord
 
   def total_price
     total_jpy_price
-    # binding.pry
   end
 
   private
