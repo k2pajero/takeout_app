@@ -227,18 +227,18 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 - 商品の出品・編集・削除を行うには、上記管理者情報でログインしてから行います。編集は商品詳細画面にリンクがあります。
 <br>
 
-<div>https://gyazo.com/de8eec8d0cd4ba26ebbebfc8a715f9d0<img src="" width="220px" align="left">管理者としてログインした時のみ、管理者ダッシュボードページと商品出品ページへのリンクが現れます<br clear="all"></div>
+<div><img src="https://gyazo.com/de8eec8d0cd4ba26ebbebfc8a715f9d0" width="220px" align="left">管理者としてログインした時のみ、管理者ダッシュボードページと商品出品ページへのリンクが現れます<br clear="all"></div>
  <br>
  <br>
 
-<div>https://gyazo.com/e374ec5bf82b5c450790cbb151c40187<img src="" width="220px" align="left">買い物かごのロゴを押すと、直接買い物かご一覧ページに遷移できる<br clear="all"></div>
+<div><img src="https://gyazo.com/e374ec5bf82b5c450790cbb151c40187" width="220px" align="left">買い物かごのロゴを押すと、直接買い物かご一覧ページに遷移できる<br clear="all"></div>
  <br>
  <br>
 
 ## ②商品一覧
 出品した商品が、出品された順（昇順）に表示されます。root画面はここに設定しています。
 
-<div>https://gyazo.com/c2de4bcedf27e14b0e5e41ba3b9b573f<img src="" width="500px" align="left">商品詳細画面には、商品の写真をクリックすると自動的に遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/c2de4bcedf27e14b0e5e41ba3b9b573f" width="500px" align="left">商品詳細画面には、商品の写真をクリックすると自動的に遷移します。<br clear="all"></div>
  <br>
  <br>
 
@@ -246,7 +246,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 
 この画面からトップへのリンクと、ログアウトも出来ます。
 
-<div>https://gyazo.com/8728829c792d23f7da0bdb34a00c7a2f<img src="" width="500px" align="left">テーブル内のレコードを閲覧できます。<br clear="all"></div>
+<div><img src="https://gyazo.com/8728829c792d23f7da0bdb34a00c7a2f" width="500px" align="left">テーブル内のレコードを閲覧できます。<br clear="all"></div>
  <br>
  <br>
 
@@ -254,7 +254,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 管理者としてログイン後、商品出品ページから出品します。  
 入力に不備がある場合は、出品画面にリダイレクトされます。
 
-<div>https://gyazo.com/d9f738d953ebb40c1b5e9b9c904a1216<img src="" width="500px" align="left">画像・商品名・説明・各カテゴリー情報・価格を入力し「出品する」ボタンを押すと、自動的にトップページに遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/d9f738d953ebb40c1b5e9b9c904a1216" width="500px" align="left">画像・商品名・説明・各カテゴリー情報・価格を入力し「出品する」ボタンを押すと、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
 
@@ -262,25 +262,25 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 ログインしていないユーザー、ログインしている一般ユーザー、管理者のいずれも閲覧できます。
 ログインしていない場合は、編集・削除・買い物かごに入れる、いずれのボタンもリンクを踏むことが出来ません。
 
-<div>https://gyazo.com/350fabf0781bf5be7224ab6b1172d91a<img src="" width="500px" align="left">管理者としてログインした時のみ、商品詳細画面に「編集」と「削除」のボタンが現れます。編集の場合は編集用画面に遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/350fabf0781bf5be7224ab6b1172d91a" width="500px" align="left">管理者としてログインした時のみ、商品詳細画面に「編集」と「削除」のボタンが現れます。編集の場合は編集用画面に遷移します。<br clear="all"></div>
  <br>
  <br>
 
-<div>https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8<img src="" width="500px" align="left">一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
+<div><img src="https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8" width="500px" align="left">一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
  <br>
  <br>
 
 ## ⑥商品編集
 管理者のみ編集画面に遷移できます。
 
-<div>https://gyazo.com/fae95b496f05ea353b610bb3e133d23d<img src="" width="500px" align="left"> 「編集」ボタンをクリックすると、自動的にトップページに遷移します。商品出品時とほぼ同じUIで編集できます。前回の入力内容はフォームに維持されています。「変更する」ボタンを押すとupdateされ、トップページに遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/fae95b496f05ea353b610bb3e133d23d" width="500px" align="left"> 「編集」ボタンをクリックすると、自動的にトップページに遷移します。商品出品時とほぼ同じUIで編集できます。前回の入力内容はフォームに維持されています。「変更する」ボタンを押すとupdateされ、トップページに遷移します。<br clear="all"></div>
  <br>
  <br>
 
 ## ⑥商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
 
-<div>https://gyazo.com/9a6b9d52382ce9186b65f304d993df17<img src="" width="500px" align="left">「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17" width="500px" align="left">「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
 
@@ -289,18 +289,18 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 買い物かご内の商品が一覧表示され、合計金額も自動計算されて表示されます。
 「買い物に戻る」をクリックすると、自動的にトップページに遷移します。
 
-<div>https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8<img src="" width="500px" align="left">商品詳細画面の**買い物かごに入れる**ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
+<div><img src="https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8" width="500px" align="left">商品詳細画面の**買い物かごに入れる**ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
  <br>
  <br>
 
 ## ⑧事前決済による購入機能
 ログインした一般ユーザーのみ使用できます。
 
-<div>https://gyazo.com/08a02e18b42b39539304c71325dd8e67<img src="" width="500px" align="left">買い物かご一覧画面の「購入する」ボタンをクリックすると、STRIPEのカード情報入力フォームが表示されます。<br clear="all"></div>
+<div><img src="https://gyazo.com/08a02e18b42b39539304c71325dd8e67" width="500px" align="left">買い物かご一覧画面の「購入する」ボタンをクリックすると、STRIPEのカード情報入力フォームが表示されます。<br clear="all"></div>
  <br>
  <br>
 
-<div>https://gyazo.com/bbdba5996ba5b6d8e1b0d26f555b61fd<img src="" width="500px" align="left">フォームにテストカードの情報を入力し、支払いボタンを押すと自動的に決済され、商品一覧画面に戻ります。このとき買い物かご内の商品はすべて空の状態に戻ります。<br clear="all"></div>
+<div><img src="https://gyazo.com/bbdba5996ba5b6d8e1b0d26f555b61fd" width="500px" align="left">フォームにテストカードの情報を入力し、支払いボタンを押すと自動的に決済され、商品一覧画面に戻ります。このとき買い物かご内の商品はすべて空の状態に戻ります。<br clear="all"></div>
  <br>
  <br>
 
