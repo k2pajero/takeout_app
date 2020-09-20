@@ -231,7 +231,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-<div><img src="https://gyazo.com/e374ec5bf82b5c450790cbb151c40187.gif" width="220px" align="left"><br>買い物かごのロゴを押すと、直接買い物かご一覧ページに遷移できる<br clear="all"></div>
+<div><img src="https://i.gyazo.com/f77fe563efcbcde58684676114d4d88f.gif" width="220px" align="left"><br>買い物かごのロゴを押すと、直接買い物かご一覧ページに遷移できる<br clear="all"></div>
  <br>
  <br>
 
@@ -266,7 +266,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-<div><img src="https://i.gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8.gif" width="220px" align="left"><br>一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
+<div><img src="https://i.gyazo.com/b0d2ad0d9e115ab01f4edd10e232e234.gif" width="220px" align="left"><br>一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
  <br>
  <br>
 
@@ -277,7 +277,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-## ⑥商品削除
+## ⑦商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
 <a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="220"/></a>
 <a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="500"/></a>
@@ -288,7 +288,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-## ⑦買い物かご（カート）機能
+## ⑧買い物かご（カート）機能
 ログインした一般ユーザーのみ使用できます。
 買い物かご内の商品が一覧表示され、合計金額も自動計算されて表示されます。
 「買い物に戻る」をクリックすると、自動的にトップページに遷移します。
@@ -297,7 +297,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-## ⑧事前決済による購入機能
+## ⑨事前決済による購入機能
 ログインした一般ユーザーのみ使用できます。
 
 <div><img src="https://gyazo.com/08a02e18b42b39539304c71325dd8e67.gif" width="220px" align="left"><br>買い物かご一覧画面の「購入する」ボタンをクリックすると、STRIPEのカード情報入力フォームが表示されます。<br clear="all"></div>
