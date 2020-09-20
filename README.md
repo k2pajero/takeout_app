@@ -300,7 +300,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-<div><img src="https://gyazo.com/bbdba5996ba5b6d8e1b0d26f555b61fd" width="500px" align="left">フォームにテストカードの情報を入力し、支払いボタンを押すと自動的に決済され、商品一覧画面に戻ります。このとき買い物かご内の商品はすべて空の状態に戻ります。<br clear="all"></div>
+<div><img src="https://i.gyazo.com/bbdba5996ba5b6d8e1b0d26f555b61fd.gif" width="500px" align="left">フォームにテストカードの情報を入力し、支払いボタンを押すと自動的に決済され、商品一覧画面に戻ります。このとき買い物かご内の商品はすべて空の状態に戻ります。<br clear="all"></div>
  <br>
  <br>
 
