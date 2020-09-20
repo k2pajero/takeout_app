@@ -283,7 +283,7 @@ https://github.com/k2pajero/takeout_app
 
 ## ⑦商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
-[![Image from Gyazo](https://i.gyazo.com/e26b0f5780c0c2a5e23451ed4af1c97c.gif)](https://gyazo.com/e26b0f5780c0c2a5e23451ed4af1c97c)
+
 <div><img src="https://i.gyazo.com/e26b0f5780c0c2a5e23451ed4af1c97c.gif" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
