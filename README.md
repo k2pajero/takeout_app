@@ -97,7 +97,10 @@ https://github.com/k2pajero/takeout_app
 # データベース
 
 ## テーブル設計
-<div><img src="https://gyazo.com/44b4b23404716376a6e627ff5da6d21e" width="700px" align="left"></div>
+<a href="https://gyazo.com/44b4b23404716376a6e627ff5da6d21e"><img src="https://i.gyazo.com/44b4b23404716376a6e627ff5da6d21e.png" alt="Image from Gyazo" width="1089"/></a>
+https://i.gyazo.com/44b4b23404716376a6e627ff5da6d21e.png
+[![Image from Gyazo](https://i.gyazo.com/44b4b23404716376a6e627ff5da6d21e.png)](https://gyazo.com/44b4b23404716376a6e627ff5da6d21e)
+<div><img src="https://gyazo.com/44b4b23404716376a6e627ff5da6d21e" width="700px" align="left"><br>管理者としてログインした時のみ、管理者ダッシュボードページと商品出品ページへのリンクが現れます<br clear="all"></div>
  <br>
  <br>
 
