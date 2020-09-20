@@ -279,7 +279,11 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 
 ## ⑥商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
+<a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="220"/></a>
+<a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="500"/></a>
 [![Image from Gyazo](https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif)](https://gyazo.com/9a6b9d52382ce9186b65f304d993df17)
+<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.mp4" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
+<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
 <div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.mp4" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
