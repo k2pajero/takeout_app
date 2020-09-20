@@ -97,7 +97,11 @@ https://github.com/k2pajero/takeout_app
 # データベース
 
 ## テーブル設計
-https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
+<div><img src="https://gyazo.com/44b4b23404716376a6e627ff5da6d21e" width="700px" align="left"></div>
+ <br>
+ <br>
+
+
 
 ## users テーブル
 
