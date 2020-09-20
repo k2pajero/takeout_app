@@ -279,12 +279,8 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 
 ## ⑦商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
-<a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="220"/></a>
-<a href="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17"><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" alt="Image from Gyazo" width="500"/></a>
-[![Image from Gyazo](https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif)](https://gyazo.com/9a6b9d52382ce9186b65f304d993df17)
-<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.mp4" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
-<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
-<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.mp4" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
+
+<div><img src="https://i.gyazo.com/1f030100f413763b56651a4c556e392b.gif" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
 
@@ -293,7 +289,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 買い物かご内の商品が一覧表示され、合計金額も自動計算されて表示されます。
 「買い物に戻る」をクリックすると、自動的にトップページに遷移します。
 
-<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="220px" align="left"><br>商品詳細画面の「買い物かごに入れる」ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
+<div><img src="https://i.gyazo.com/5e9e4b520a1ae884b00f540840f4960d.gif" width="220px" align="left"><br>商品詳細画面の「買い物かごに入れる」ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
  <br>
  <br>
 
