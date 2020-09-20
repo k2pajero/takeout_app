@@ -266,7 +266,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
  <br>
  <br>
 
-<div><img src="https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8.gif" width="300px" align="left"><br>一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
+<div><img src="https://i.gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8.gif" width="220px" align="left"><br>一般ユーザーとしてログインした時のみ、商品詳細画面に「買い物かごに入れる」のボタンが現れます<br clear="all"></div>
  <br>
  <br>
 
@@ -280,7 +280,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 ## ⑥商品削除
 管理者のみ商品削除画面の「削除」ボタンをクリックすると削除できます。
 
-<div><img src="https://gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="300px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
+<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="220px" align="left"><br>「削除」ボタンをクリックすると、自動的にトップページに遷移します。<br clear="all"></div>
  <br>
  <br>
 
@@ -289,7 +289,7 @@ https://gyazo.com/44b4b23404716376a6e627ff5da6d21e
 買い物かご内の商品が一覧表示され、合計金額も自動計算されて表示されます。
 「買い物に戻る」をクリックすると、自動的にトップページに遷移します。
 
-<div><img src="https://gyazo.com/05d9cfffcc16e749b4e4d32fffdad2b8.gif" width="300px" align="left"><br>商品詳細画面の**買い物かごに入れる**ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
+<div><img src="https://i.gyazo.com/9a6b9d52382ce9186b65f304d993df17.gif" width="220px" align="left"><br>商品詳細画面の「買い物かごに入れる」ボタンをクリックすると、買い物かごに商品が追加され、買い物かご一覧画面に自動的に遷移します。<br clear="all"></div>
  <br>
  <br>
 
