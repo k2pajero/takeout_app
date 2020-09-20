@@ -19,7 +19,7 @@
         <% if current_user.admin? %>
           <ul class='lists-admin'>
             <li><%= link_to '管理者ページ', rails_admin_path, class: "user-admin" %></li>
-            <li><%= link_to '商品編集', new_item_path, class: "user-admin" %></li>
+            <li><%= link_to '商品出品', new_item_path, class: "user-admin" %></li>
           </ul>
         <% end %>
       <% else %>
