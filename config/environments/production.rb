@@ -112,5 +112,5 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'us-cdbr-east-02.cleardb.com'}
   # host = 'samplehost'
   # Rails.application.routes.default_url_options[:host] = host
-  config.assets.initialize_on_precompile = false
+  
 end
