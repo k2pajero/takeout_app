@@ -26,7 +26,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
     @user = User.new(session['devise.regist_data']['user'])
     @address = Address.new(address_params)
     # binding.pry
-    render :new_address unless @address.valid?
+      unless @address.valid?
+        render :new_address 
+      end
     @user.build_address(@address.attributes)
     @user.save
     session['devise.regist_data']['user'].clear

@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'us-cdbr-east-02.cleardb.com'
   layout 'mailer'
 end
