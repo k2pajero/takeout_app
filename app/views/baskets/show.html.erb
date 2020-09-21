@@ -17,7 +17,7 @@
               data-amount="<%= @total_price %>"
               data-key="<%= ENV['STRIPE_API_KEY'] %>"
               data-description="クレジット決済"
-              data-label="購入する"
+              data-label="購入手続きへ"
               data-locale="auto"
               data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
               data-currency="jpy"></script>
@@ -26,6 +26,7 @@
     <ul class='item-lists'>
       <% @items.each do |item| %>
        <div class='item-img-content'>
+        <%= link_to item_path(item.id) do %>
         <%= image_tag item.image, class: "item-img" if item.image.attached? %></div>
         <div class='item-info'>
           <li class='list'>
@@ -41,6 +42,7 @@
               </div>
             </div>
           </li>
+          <% end %>
         </div>
       <% end %>
       </ul>
