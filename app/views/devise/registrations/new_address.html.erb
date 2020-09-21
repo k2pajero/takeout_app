@@ -2,7 +2,7 @@
  <div class='transaction-contents'>
   <div class='transaction-main'>
 
-  <%= form_for @address do |f| %>
+  <%= form_for @address, url: addresses_path, local: true do |f| %>
     <%= render 'shared/error_messages', model: f.object %>
 
     <div class='shipping-address-form'>
