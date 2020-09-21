@@ -23,3 +23,26 @@ ja:
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
     am: "午前"
     pm: "午後"
+ja:
+  activerecord:
+    attributes:
+      user:
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: 確認用パスワード
+        remember_me: 次回から自動的にログイン
+        nickname: ニックネーム
+        real_family_name: 姓
+        real_first_name: 名
+        reading_family_name: フリガナ（姓）
+        reading_first_name: フリガナ（名）
+        birthday: 誕生日
+        Confirm my account: ログイン画面へ
+      item:
+        image: 画像
+        name: 商品名
+        description: 商品説明文
+        saize_category_id: サイズid
+        genre_category_id: ジャンルid
+        speed_id: 提供時間
+        price: 価格（税込み）

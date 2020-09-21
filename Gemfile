@@ -70,6 +70,7 @@ gem 'rails_admin', '~> 2.0.0.beta'
 gem 'stripe'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'dotenv-rails', :require => 'dotenv/rails-now'
+gem 'rails-i18n'
 
 group :production do
   gem 'rails_12factor'
