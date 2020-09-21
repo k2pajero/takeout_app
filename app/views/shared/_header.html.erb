@@ -13,7 +13,7 @@
   <div class='lists-right'>
       <% if user_signed_in? %>
         <ul class='lists-right'>
-            <li><%= link_to current_user.nickname, root_path, class: "user-nickname" %></li>
+            <li>こんにちは <%= link_to current_user.nickname, root_path, class: "user-nickname" %> さん</li>
             <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
         </ul>
         <% if current_user.admin? %>
