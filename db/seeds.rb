@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Item.create!(
+  
 #   name: 'test',
 #   description: 'aaaaaaa',
 #   price: 100,
@@ -14,6 +15,7 @@
 #   genre_category_id: 1,
 #   saize_category_id: 1
 # )
+
 
 # 20.times do
 #   Item.create!(

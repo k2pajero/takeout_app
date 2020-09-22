@@ -52,12 +52,12 @@
         </div>
         <%= f.collection_select(:genre_category_id, GenreCategory.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
         <div class="weight-bold-text">
-          商品のジャンル
+          サイズ
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:saize_category_id, SaizeCategory.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
         <div class="weight-bold-text">
-          商品のサイズ
+          提供時間
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:speed_id, Speed.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>

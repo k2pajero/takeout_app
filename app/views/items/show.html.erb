@@ -31,15 +31,13 @@
     <% end %>
 
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
-      <div class='purchase-btn'>
-        <span class='purchase-btn-text'>買い物かごを見る</span>
-        <a href="/basket">
-        <%= image_tag 'digital-2214139_640.png' , size: '185x50' ,class: "purchase-btn-icon" %>
-        </a>
-      </div> 
+      
       <%= link_to item_add_to_baskets_path(@item.id), method: :post do %>
       <button type="button" class="btn btn-success">買い物かごに入れる</button>
-      <% end %>
+      <% end %><br>
+      <%= link_to root_path do %>
+      <button type="button" class="btn btn-success">買い物に戻る</button>
+    <% end %><br>
     <% end %>
   
 
@@ -91,13 +89,15 @@
   </div>
   <div class="links">
     <a href="#" class="change-item-btn">
-      ＜ 前の商品
+      <%# ＜ 前の商品 %>
     </a>
     <a href="#" class="change-item-btn">
-      後ろの商品 ＞
+      <%# 後ろの商品 ＞ %>
     </a>
   </div>
-  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>をもっと見る</a>
+  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>
+  <%# をもっと見る %>
+  </a>
 </div>
 
 <%= render "shared/footer" %>

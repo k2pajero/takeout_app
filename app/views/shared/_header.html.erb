@@ -1,41 +1,56 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
 <header class='top-page-header'>
-  <div class='search-bar-contents'>
-  
-    <%= link_to image_tag("logo.jpg", class:"furima-icon"), "/" %>
-    <form class="search-form" action="#">
-      <input class='input-box' placeholder='キーワードから探す'>
-      <button class="search-button">
-        <%= image_tag "search.png", class:"search-icon" %>
-      </button>
-    </form>
-  </div>
-  <div class='lists-right'>
-      <% if user_signed_in? %>
-        <ul class='lists-right'>
-            <li>こんにちは <%= link_to current_user.nickname, root_path, class: "user-nickname" %> さん</li>
-            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-        </ul>
-        <% if current_user.admin? %>
-          <ul class='lists-admin'>
-            <li><%= link_to '管理者ページ', rails_admin_path, class: "user-admin" %></li>
-            <li><%= link_to '商品出品', new_item_path, class: "user-admin" %></li>
-          </ul>
-        <% end %>
-      <% else %>
-        <ul class='lists-right'>
-            <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-            <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-        </ul>
-      <% end %>
 
-  </div>
-  <div class='nav'>
-      <ul class='lists-left'>
-        <li><%= link_to 'お得なセット', "#", class: "brand-list" %></li>
-        <li><%= link_to 'お一人様メニュー', "#", class: "category-list" %></li>
-        <li><%= link_to 'ファミリーメニュー', "#", class: "brand-list" %></li>
-        <li><%= link_to '単品メニュー', "#", class: "brand-list" %></li>
+  <div class='search-bar-contents'>
+    <div class="nav-top">
+      <div class="nav-left">
+        <%= link_to image_tag("logo.jpg", class:"takeout-icon"), "/" %>
+      </div>
+      <div class="nav-center">
+        <form class="search-form" action="#">
+          <input class='input-box' placeholder='キーワードから探す'>
+          <button class="search-button">
+            <%= image_tag "search.png", class:"search-icon" %>
+          </button>
+        </form>
+      </div>
+      <div class="nav-right">
+        <div class="nav-user">
+          <% if user_signed_in? %>
+            <ul class='nav-user-list'>
+                <li>こんにちは</li>
+                <li><%= link_to current_user.nickname, root_path, class: "user-nickname" %>さん</li>
+                <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+            </ul>
+            <% if current_user.admin? %>
+              <ul class='nav-user-list'>
+                <li><%= link_to '管理者ページ', rails_admin_path, class: "admin-page-btn" %></li>
+                <li><%= link_to '商品出品', new_item_path, class: "item-sell-btn" %></li>
+              </ul>
+            <% end %>
+          <% else %>
+            <ul class='nav-user-list'>
+                <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+                <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+            </ul>
+          <% end %>
+        </div>
+      </div>
+      <div class='cart-btn'> 
+        <a href="/basket">
+          <div><span class="cart-btn-text">①<%# @basketitems.count %></span>
+          </div>
+          <%= image_tag 'digital-2214139_640.png' , size: '50x50' ,class: "cart-btn-icon" %>
+          
+        </a>
+      </div> 
+    </div> 
+    <div class='nav-bottom'>
+      <ul class='nav-bottom-tags'>
+        <li><%= link_to 'ジャンル', "#", class: "genre-list" %></li>
+        <li><%= link_to 'サイズ', "#", class: "size-list" %></li>
+        <li><%= link_to 'お作り時間', "#", class: "surve-speed-list" %></li>
       </ul>
+    </div>
   </div>
 </header>
