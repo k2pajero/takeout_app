@@ -19,6 +19,7 @@ class User < ApplicationRecord
   has_one :address
   has_one :basket, dependent: :destroy
   has_one :purchase_record, dependent: :destroy
+  has_many :sns_credentials
 
   def prepare_basket
     basket || create_basket
