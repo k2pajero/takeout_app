@@ -6,47 +6,42 @@ a {
   background: #f8f8f8;
 }
 // スライドショー
+
+#slide-main {
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .simpleSlideShow {
+  position: relative;
   display: block;
-  width: 980px;
+  width: 80vw;
   height: 400px;
   margin: 0 auto;
-  }
-//   .simpleSlideShowWrapper {
-//   margin : 0 auto;
-//   position : relative;
-//   width: 980px;
-//   height: 400px;
-//   }
-  
-//   .simpleSlideShowWrapper img {
-//   display : none;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   }
-  
-//   #slide-main {
-//   position: relative;
-//   width: 980px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   }
-  
-//   #slidecopy {
-//   display: block;
-//   width: 960px;
-//   background: #fff;
-//   opacity: 0.7;
-//   padding: 10px;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 0px;
-//   }
-  
+}
+
+.slider {
+  margin : 0 auto;
+  width: 980px;
+  height: 400px;
+}
+
+.slide-contents {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
 // スライドショー
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   width: 100vw;
   background-image: image-url('foodiesfeed.com_pizza-with-ricotta-cheese-close-up.jpg');
@@ -63,11 +58,11 @@ a {
 }
 
 .service-title {
-  font-size: 8vh;
+  font-size: 4vh;
 }
 
 .service-explain {
-  font-size: 2.5vh;
+  font-size: 2vh;
   line-height: 40px;
 }
 
