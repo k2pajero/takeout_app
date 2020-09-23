@@ -4,7 +4,10 @@
     <h2>登録が完了しました</h2>
   </div>
   <div>
-    <%= link_to "トップへ戻る", root_path%>
+    <%= link_to root_path do %>
+      <button type="button" class="btn">トップへ戻る</button>
+    <% end %>
+    
   </div>
 </div>
 
