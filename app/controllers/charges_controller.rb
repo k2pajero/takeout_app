@@ -27,6 +27,7 @@ class ChargesController < ApplicationController
     # purchase_record.purchase_record_items.create!(ids)
     # idsはレコードを作成するcreate!の引数に入れる配列array を作っている
     current_user.checkout!(token, item_ids: item_ids)
+ 
     redirect_to root_path, notice: '決済に成功しました'
   end
 end

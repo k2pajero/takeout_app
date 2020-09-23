@@ -27,7 +27,12 @@
     <% if user_signed_in? && current_user.admin? %>
       <%= link_to '商品の編集', edit_item_path, method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
-      <%= link_to '削除',item_path, method: :delete, class:'item-destroy', data: {confirm: '削除してもよろしいですか？'}  %>
+      <%= link_to item_path, method: :delete, data: {confirm: '削除してもよろしいですか？'} do %>
+      <button type="button" class="item-delete-btn">商品を削除する</button>
+    <% end %>
+    <%= link_to root_path do %>
+      <button type="button" class="return-btn">トップページに戻る</button>
+    <% end %><br>
     <% end %>
 
     <% if (user_signed_in? && !current_user.admin) || !user_signed_in? %>  
@@ -36,7 +41,7 @@
       <button type="button" class="btn btn-success">買い物かごに入れる</button>
       <% end %><br>
       <%= link_to root_path do %>
-      <button type="button" class="btn btn-success">買い物に戻る</button>
+      <button type="button" class="return-btn">買い物に戻る</button>
     <% end %><br>
     <% end %>
   
@@ -60,44 +65,44 @@
         </tr>
       </tbody>
     </table>
-    <div class="option">
-      <div class="favorite-btn">
-        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-        <span>お気に入り 0</span>
-      </div>
-      <div class="report-btn">
-        <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
-        <span>不適切な商品の通報</span>
-      </div>
-    </div>
+    <%# <div class="option"> %>
+      <%# <div class="favorite-btn"> %>
+        <%# image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+        <%# <span>お気に入り 0</span> %>
+      <%# </div> %>
+      <%# <div class="report-btn"> %>
+        <%# image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
+        <%# <span>不適切な商品の通報</span> %>
+      <%# </div> %>
+    <%# </div> %>
   </div>
   <%# /商品の概要 %>
 
-  <div class="comment-box">
+  <%# <div class="comment-box">
     <form>
       <textarea class="comment-text"></textarea>
-      <p class="comment-warn">
-        相手のことを考え丁寧なコメントを心がけましょう。
-        <br>
-        不快な言葉遣いなどは利用制限や退会処分となることがあります。
-      </p>
-      <button type="submit" class="comment-btn">
-        <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
-        <span>コメントする<span>
-      </button>
+      <p class="comment-warn"> %>
+        <%# 相手のことを考え丁寧なコメントを心がけましょう。 %>
+        <%# <br> %>
+        <%# 不快な言葉遣いなどは利用制限や退会処分となることがあります。 %>
+      <%# </p> %>
+      <%# <button type="submit" class="comment-btn"> %>
+        <%# image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
+        <%# <span>コメントする<span> %>
+      <%# </button>
     </form>
   </div>
   <div class="links">
-    <a href="#" class="change-item-btn">
+    <a href="#" class="change-item-btn"> %>
       <%# ＜ 前の商品 %>
-    </a>
-    <a href="#" class="change-item-btn">
+    <%# </a>
+    <a href="#" class="change-item-btn"> %>
       <%# 後ろの商品 ＞ %>
-    </a>
-  </div>
-  <a href="#" class='another-item'><%= "商品のカテゴリー名" %>
+    <%# </a> %>
+  <%# </div> %>
+  <%# <a href="#" class='another-item'>"商品のカテゴリー名" %>
   <%# をもっと見る %>
-  </a>
-</div>
+  <%# </a> %>
+<%# </div> %>
 
 <%= render "shared/footer" %>

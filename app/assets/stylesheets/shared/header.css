@@ -4,10 +4,10 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 5vw;
+  padding: 1vh 5vw;
   /* display: flex;
   flex-direction: column; */
-
+  /* background-color:whitesmoke; */
 }
 
 .search-bar-contents {
@@ -33,13 +33,15 @@
 }
 .nav-right {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column; */
+  align-items: center;
   justify-content: space-around;
   /* background-color: magenta; */
 }
 .nav-user {
   /* background-color: mediumaquamarine; */
+  display: flex;
+  align-items: center;
 }
 .nav-user-list {
   /* background-color: mistyrose; */
@@ -62,13 +64,13 @@
 .nav-bottom-tags {
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  /* background-color: lightgray; */
   padding: 1.5vw;
   font-weight: bold;
   color: whitesmoke;
   text-decoration: none;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  border-radius: 45%;
+  /* border-radius: 45%; */
 }
 .genre-list {
   text-decoration: none;
@@ -116,13 +118,13 @@
 }
 
 .takeout-icon {
-  width: 8vw;
-  margin: 10px;
+  width: 12vw;
+  margin: 8px;
   
 }
 
 .search-form {
-  width: 50vw;
+  width: 25vw;
   height: 5vh;
   display: flex;
   margin-bottom: 5px;
@@ -138,7 +140,7 @@
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: hsl(182, 60%, 52%);
   padding: 8px;
 }
 
@@ -148,13 +150,14 @@
 
 .user-nickname {
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
   color: #333333;
   font-weight: bold;
 }
 
 
-.logout {
+/* .logout {
   text-decoration: none;
   color: #333333;
   font-weight: bold;
@@ -168,4 +171,4 @@
 .sign-up {
   text-decoration: none;
   color: #333333;
-} 
+}  */

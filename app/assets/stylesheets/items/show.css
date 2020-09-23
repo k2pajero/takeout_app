@@ -52,12 +52,12 @@
 
 .item-red-btn {
   text-align: center;
-  background-color: #ea352d;
+  background-color: hsl(182, 60%, 52%);
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
+  margin: 10px 0px;
+  padding: 2vh 5vw;
 }
 
 .or-text {

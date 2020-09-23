@@ -57,7 +57,7 @@ module Responders
   # ends with <tt>_html</tt> as the scopes below:
   #
   #   flash.actions.create.notice_html
-  #   flash.cars.create.notice_html
+  #   flash.cars.create_html
   #
   # == Options
   #

@@ -1,5 +1,5 @@
 <%= render "shared/second-header"%>
-
+<div class="new-user-regist">
 <%= form_for(@user, class: 'registration-main', url: user_registration_path) do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
@@ -74,8 +74,8 @@
     </div>
     <div class='input-birth-wrap'>
       <%= raw sprintf(
-                  f.date_select(
-                    :birthday,
+        f.date_select(
+          :birthday,
                     class:'select-birth',
                     id:"birth-date",
                     use_month_numbers: true,
@@ -100,5 +100,6 @@
   <p class='register-info'>本人情報の登録について</p>
 </div>
 <% end %>
+</div>
 
 <%= render "shared/second-footer"%>

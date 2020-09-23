@@ -17,31 +17,47 @@
       <div class="nav-right">
         <div class="nav-user">
           <% if user_signed_in? %>
-            <ul class='nav-user-list'>
-                <li>こんにちは</li>
-                <li><%= link_to current_user.nickname, root_path, class: "user-nickname" %>さん</li>
-                <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-            </ul>
+            <div class='nav-user-list'>
+                <p>こんにちは</p>
+                <p><%= link_to current_user.nickname, root_path, class: "user-nickname" %>さん</p>
+                <div><%# link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></div>
+                <div class="log-out">
+                <%= link_to destroy_user_session_path, method: :delete do %>
+                 <button type="button" class="return-btn">ログアウト</button>
+                <% end %>
+                </div>
+            </div>
             <% if current_user.admin? %>
-              <ul class='nav-user-list'>
-                <li><%= link_to '管理者ページ', rails_admin_path, class: "admin-page-btn" %></li>
-                <li><%= link_to '商品出品', new_item_path, class: "item-sell-btn" %></li>
-              </ul>
+              <div class='nav-admin-list'>
+                <%= link_to rails_admin_path do %>
+                 <button type="button" class="btn">ダッシュボード</button>
+                <% end %>
+                <%= link_to new_item_path do %>
+                 <button type="button" class="btn">出品</button>
+                <% end %>
+                <div><%# link_to '管理者ページ', rails_admin_path, class: "admin-page-btn" %></div>
+                <div><%# link_to '商品出品', new_item_path, class: "item-sell-btn" %></div>
+              </div>
             <% end %>
           <% else %>
             <ul class='nav-user-list'>
-                <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-                <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+                <%= link_to new_user_session_path do %>
+                 <button type="button" class="btn">ログイン</button>
+                <% end %>
+                <%= link_to new_user_registration_path do %>
+                 <button type="button" class="btn">新規登録</button>
+                <% end %>
+                <li><%# link_to 'ログイン', new_user_session_path, class: "login" %></li>
+                <li><%# link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
             </ul>
           <% end %>
         </div>
       </div>
       <div class='cart-btn'> 
         <a href="/basket">
-          <div><span class="cart-btn-text">①<%# @basketitems.count %></span>
+          <%= image_tag 'digital-2214139_640.png' , size: '60x60' ,class: "cart-btn-icon" %>
+          <div><span class="cart-btn-text"><%# @basketitems.count %> カート</span>
           </div>
-          <%= image_tag 'digital-2214139_640.png' , size: '50x50' ,class: "cart-btn-icon" %>
-          
         </a>
       </div> 
     </div> 
