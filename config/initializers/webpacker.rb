@@ -1,0 +1,1 @@
+Webpacker::Compiler.env["STRIPE_API_KEY"] = ENV["STRIPE_API_KEY"]
