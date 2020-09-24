@@ -10,24 +10,32 @@
 
   <%= render 'shared/error_messages', model: @user %>
 
-  <div class="form-group">
-    <ul class="sns-registration">
-      <li><%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post%></li>
-      <li><%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post%></li>
-    </ul>
-    <div class='form-text-wrap'>
-      <label class="form-text">ニックネーム</label>
-      <span class="indispensable">必須</span>
+    <div class="sns-login">
+      <div>
+        <%= link_to user_facebook_omniauth_authorize_path, method: :post do %>
+          <button type="button" class="sns-login-btn"><span class="facebook-logo"></span><span>Facebookで登録</span></button>
+        <% end %>
+      </div>
+      <div>
+        <%= link_to user_google_oauth2_omniauth_authorize_path, method: :post do %>
+          <button type="button" class="sns-login-btn"><span class="google-logo"></span><span>Googleで登録</span></button>
+        <% end %>
+      </div>
     </div>
-    <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) furima太郎", maxlength:"40" %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">メールアドレス</label>
-      <span class="indispensable">必須</span>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">ニックネーム</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) furima太郎", maxlength:"40" %>
     </div>
-    <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
-  </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">メールアドレス</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+    </div>
 
   <%if @sns_id.present? %>
    <%= hidden_field_tag :sns_auth, true %>

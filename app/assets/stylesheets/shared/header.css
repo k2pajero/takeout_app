@@ -45,12 +45,14 @@
 }
 .nav-user-list {
   /* background-color: mistyrose; */
+  
 }
 .nav-admin {
   /* background-color: orange; */
 }
 .nav-admin-list {
   /* background-color: paleturquoise; */
+
 }
 .admin-page-btn {
   /* background-color: palevioletred; */
@@ -63,7 +65,7 @@
 }
 .nav-bottom-tags {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   /* background-color: lightgray; */
   padding: 1.5vw;
   font-weight: bold;
@@ -118,7 +120,7 @@
 }
 
 .takeout-icon {
-  width: 12vw;
+  width: 8vw;
   margin: 8px;
   
 }
