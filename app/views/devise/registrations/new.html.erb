@@ -11,10 +11,14 @@
   <%= render 'shared/error_messages', model: @user %>
 
   <div class="form-group">
-    <ul class="sns-registration">
-      <li><%= link_to 'Facebookで登録', user_facebook_omniauth_authorize_path, method: :post%></li>
-      <li><%= link_to 'Googleで登録', user_google_oauth2_omniauth_authorize_path, method: :post%></li>
-    </ul>
+  <div class="sns-login">
+      <%= link_to user_facebook_omniauth_authorize_path, method: :post do %>
+        <button type="button" class="sns-login-btn"><span class="facebook-logo"></span><span>Facebookで登録</span></button>
+      <% end %>
+      <%= link_to user_google_oauth2_omniauth_authorize_path, method: :post do %>
+        <button type="button" class="sns-login-btn"><span class="google-logo"></span><span>Googleで登録</span></button>
+      <% end %>
+    </div>
     <div class='form-text-wrap'>
       <label class="form-text">ニックネーム</label>
       <span class="indispensable">必須</span>
