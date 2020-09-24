@@ -25,6 +25,9 @@
                 <%= link_to destroy_user_session_path, method: :delete do %>
                  <button type="button" class="return-btn">ログアウト</button>
                 <% end %>
+                <%= link_to user_path(current_user) do %>
+                 <button type="button" class="btn">マイページへ</button>
+                <% end %>
                 </div>
             </div>
             <% if current_user.admin? %>
