@@ -9,10 +9,10 @@
     <%= form_for(current_user) do |f| %>
       <div class="FormField">
         <div class="FormField__name">
-          <%= f.label :name %>
+          <%= f.label :nickname %>
         </div>
         <div class="FormField__name">
-          <%= f.text_field :name, autofocus: true %>
+          <%= f.text_field :nickname, autofocus: true %>
         </div>
       </div>
       <div class="FormField">
@@ -25,6 +25,10 @@
         <br>
       </div>
       <%= f.submit "更新する" %>
+      <br>
+   <%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
+   <br>
+   <%= link_to "商品一覧へ戻る", root_path%>
     <% end %>
   </div>
 </div>
