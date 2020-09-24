@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resource :basket, only: :show
   resource :charge, only: :create
   resources :users, only: [:create, :new, :update, :show]
+  resources :cards, only: [:new, :create]
   resources :items do
     scope module: :items do
       resources :add_to_baskets, only: [:create]
