@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:nickname, :email, :password, :password_confirmation, :real_family_name, :real_first_name, :reading_family_name, :reading_first_name, :birthday, :birthday, :birthday)
+    params.require(:user).permit(:nickname, :email, :password, :password_confirmation, :real_family_name, :real_first_name, :reading_family_name, :reading_first_name, :birthday)
    # 編集出来る情報を制限
   end
   
