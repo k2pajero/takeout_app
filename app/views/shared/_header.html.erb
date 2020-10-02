@@ -7,12 +7,15 @@
         <%= link_to image_tag("logo.jpg", class:"takeout-icon"), "/" %>
       </div>
       <div class="nav-center">
-        <form class="search-form" action="#">
-          <input class='input-box' placeholder='キーワードから探す'>
-          <button class="search-button">
+
+        <%= form_with(url: search_items_path, local: true, method: :get, class: "search-form") do |form| %>
+        <%= form.text_field :keyword, placeholder: "商品名で探す", class: "input-box" %>
+        <%# form.submit "検索", class: "search-btn" %>
+        <button class="search-button">
             <%= image_tag "search.png", class:"search-icon" %>
           </button>
-        </form>
+        <% end %>
+      
       </div>
       <div class="nav-right">
         <div class="nav-user">
@@ -63,7 +66,7 @@
       <div class='cart-btn'> 
         <a href="/basket">
           <%= image_tag 'digital-2214139_640.png' , size: '70x70' ,class: "cart-btn-icon" %>
-          <div><span class="cart-btn-text"><%# @basketitems.count %> カート</span>
+          <div><span class="cart-btn-text"><%# @basketitems.count %> </span>
           </div>
         </a>
       </div> 

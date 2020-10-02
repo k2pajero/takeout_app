@@ -16,4 +16,12 @@ class Item < ApplicationRecord
     validates :speed_id, numericality: { other_than: 0 }
     validates :price
   end
+
+  def self.search(search)
+    if search != ""
+      Item.where('name LIKE(?)', "%#{search}%")
+    else
+      Item.all
+    end
+  end
 end
