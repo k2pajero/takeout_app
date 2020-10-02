@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   resources :users, only: [:create, :new, :update, :show]
   resources :cards, only: [:new, :create]
   resources :items do
+    collection do
+      get 'search'
+    end
     scope module: :items do
       resources :add_to_baskets, only: [:create]
       resources :delete_in_baskets, only: [:create]
