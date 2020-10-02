@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :move_to_index, except: %i[index show search]
+  before_action :search_item, only: [:index, :search, :second_search]
 
   def index
     @items = Item.all.order(created_at: 'DESC')
@@ -24,9 +25,16 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
   end
-
+  
   def search
     @items = Item.search(params[:keyword])
+    @results = @p.result.order(created_at: 'DESC')
+    set_search
+  end
+
+  def second_search
+    @results = @p.result.order(created_at: 'DESC')
+    set_search
   end
 
   def edit
@@ -59,5 +67,15 @@ class ItemsController < ApplicationController
 
   def move_to_index
     redirect_to action: :index unless user_signed_in?
+  end
+
+  def search_item
+    @p = Item.ransack(params[:q])  # 検索オブジェクトを生成
+  end
+
+  def set_search
+    @genre_category = GenreCategory.where.not(id: 0)
+    @saize_category = SaizeCategory.where.not(id: 0)
+    @speed = Speed.where.not(id: 0)
   end
 end

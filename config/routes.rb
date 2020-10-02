@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources :items do
     collection do
       get 'search'
+      get 'second_search'
     end
     scope module: :items do
       resources :add_to_baskets, only: [:create]
