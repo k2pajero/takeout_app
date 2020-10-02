@@ -42,8 +42,8 @@
     <%= link_to '', "#", class: "subtitle" %>
     <ul class='item-lists'>
 
-  <% if @items.length !=0 %>
-    <% @items.each do |item| %>
+  <% if @results.length !=0 %>
+    <% @results.each do |item| %>
       <li class='list'>
         <%= link_to item_path(item.id) do %>
         <div class='item-img-content'>
@@ -65,9 +65,9 @@
       </li>
     <% end %>
     </ul>
-  <% else %>
+    <% else %>
     該当する商品はありません
-  <% end %>
+    <% end %>
   </div>
 </div>
 
