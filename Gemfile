@@ -80,6 +80,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem "omniauth-rails_csrf_protection"
 gem 'ransack'
+gem 'gretel'
 
 group :production do
   gem 'rails_12factor'
